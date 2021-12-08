@@ -1,0 +1,28 @@
+# Solidity contract and unit tests for ChainShot bootcamp final project
+
+This project directory contains my contribution to the final project named 
+chainCheque or CheckFi (name still undecided) for the ChainShoot bootcamp. The project 
+was completed in a team together with echo, sparrow, and CodeBeholder (discord names) and
+presented on 9 December 2021. 
+
+What the project proposes is an on-chain digital cheque based on an ERC721 NFT.
+
+My contribution consists of a solidity escrow contract showing how an on-chain cheque could 
+be used to implement an on-chain escrow with real currency, certain adaptions to the cheque
+contract to allow for this and unit tests for the major components of the escrow contract.
+
+I also wrote a smart contract based on an ERC20 token which could provide for an 
+on-chain bank account (rather than an on-chain cheque) and an escrow contract to go with it.
+These are contained in a separate folder.
+
+The escrow contract provides for escrows with three parties, a depositor, a beneficiary
+and an arbiter. It can be used for multiple escrows with varying parties. The escrow
+requires the prior consent of all parties to it before it can be executed 
+(multi-sig functionality). In a seperate folder there is also a variant based on an 
+on-chain bank account (rather than a cheque) which is more flexible and allows 
+for more functionality.
+
+The escrow contract can be tested on a local hardhat network or rinkeby by running 
+npx hardhat test (--network rinkeby).
+
+                                        ***
